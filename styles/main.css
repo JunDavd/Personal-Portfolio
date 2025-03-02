@@ -7,13 +7,14 @@
     margin-bottom: 1.5rem;
     .about{
         height: 50vh;
-        text-align: start;
+        text-align: center;
     }
     .skills{
         box-sizing: border-box;
         height: 50vh;
         width: 100%;
         max-width: 100vw;
+        text-align: center;
         .skills-card{
             display: flex;
             flex-direction: column;
@@ -106,4 +107,19 @@
         width: 70%;
     }
     
+}
+
+@media screen and (width > 768px){
+    .main.banner .skills{
+        max-width: 768px;
+        height: 70vh;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main.banner .about{
+        max-width: 768px;
+        height: 30vh;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
