@@ -1,3 +1,4 @@
+
 .banner{
     width: 90%;
     margin: 0 auto;
@@ -23,6 +24,8 @@
     }
     
 }
+
+
 .presentation{
     position: absolute;
     z-index: 1;
