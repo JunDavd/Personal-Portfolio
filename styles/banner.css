@@ -1,11 +1,11 @@
 .banner{
     text-align: center;
     height: 100vh;
-    background-color: var(--secondary-background-color);
-    /* position: relative; */
-    /* display: flex;
+    background-color: var(--main-background-color);
+    position: relative; 
+    /* /* display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center; 
     /* margin-bottom: 2rem; */
     /* .bg-img-banner{
         background-color: aqua;

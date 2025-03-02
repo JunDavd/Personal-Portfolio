@@ -1,13 +1,15 @@
 
 :root {
     --main-background-color: #f5f5f7;
-    --secondary-background-color: #f6f7f9;
-    --terciary-background-color:#cdfe7d;
+    --secondary-background-color: #ebebeb;
+    --terciary-background-color:#f0ff6c;
     --border-size: 16px;
     --main-title-font-weigth: 700px;
     --main-text-color: #141414;
+    --btn-main-color:#6bfdd9;
     font-size: 16px;
-    font-family: "Spline-Sans","Roboto",Helvetica, sans-serif;
+    font-family:"Roboto","Spline Sans",Helvetica, sans-serif;
+    font-weight: 500;
     
 }
 
@@ -22,16 +24,38 @@
 p {
     margin: 0;
     margin-bottom: 1rem;  /* esto deja los margenes hacia abajo*/
+    
 }
 
 h1, h2, h3, h4, p {
     margin-top: 0;
 }
 
-a {
-    text-decoration: none;
+h1, h2 {
+    .title{
+        font-weight: 700;
+    }
 }
 
-a.hide {
+a {
+    text-decoration: none;
+    
+}
+
+a.btn.hide {
     display: none;
+}
+
+@media screen and (width > 768px) {
+    a.btn.hide {
+        display: block;
+    }
+}
+
+li{
+    list-style: none;
+}
+
+ul{
+    margin: 0 0;
 }
