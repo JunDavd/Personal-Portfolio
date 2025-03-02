@@ -52,22 +52,28 @@
             <h2>Contacto</h2>
             <form action="" method="post" novalidate>
                 <div class="form-element">
-                    <label for="mail">Add your email</label>
-                    <input required type="email" name="email" id="mail" autocomplete="off" value="test@test.com">
-                </div>
-                <div class="form-element">
-                    <label for="password">Add your password</label>
+                    <label for="name">Dime tú nombre</label>
                     <input 
                     required 
-                    readonly
-                    type="password" 
-                    name="password" 
-                    id="password" 
-                    placeholder="add your password"
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    autocomplete="off" 
+                    placeholder="ej: Marco Aurelio">
+                </div>
+                <div class="form-element">
+                    <label for="apellido">Dime tu apellido</label>
+                    <input 
+                    required 
+                    type="text" 
+                    name="apellido" 
+                    autocomplete="off"
+                    id="apellido" 
+                    placeholder="ej:Antonino "
                     >        
                 </div>
                 <div class="form-element">
-                    <label for="tel"></label>Enter your phone number
+                    <label for="tel"></label>Número telefónico
                     <input  
                     type="tel" 
                     name="telephone" 
@@ -80,35 +86,35 @@
                     >
                 
                 </div>
-                <div class="file-element">
-                    <label for="profile">Choose a profile picture</label>
-                    <input type="file" name="profile" id="profile" accept="image/png">
+                <div class="form-element">
+                    <label for="User">Usuario de Github</label>
+                    <input 
+                    type="text" 
+                    name="User" 
+                    id="User" 
+                    pattern="^@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,38}[a-zA-Z0-9])?$"
+                    placeholder="ej: @Jundavd"
+                    required
+                    >
                 </div>
-                <fieldset>
-                    <legend>Fav programming language</legend>
-                    <label for="js">Js</label>
-                    <input type="radio" name="fav" id="js" value="js" checked>
-                    <label for="python">Python</label>
-                    <input type="radio" name="fav" id="python" value="python">
+                <fieldset class="fieldset form-element">
+                    <legend>¿Cómo me conociste?</legend>
+                    <label for="universidad">Universidad</label>
+                    <input class="type-1" type="radio" name="select" id="universidad" value="universidad" checked>
+                    <label for="Keepcoding">Keepcoding kick-off</label>
+                    <input class="type-1" type="radio" name="select" id="Keepcoding" value="Keepcoding">
+                    <label for="colegio">Colegio</label>
+                    <input class="type-1" type="radio" name="select" id="colegio" value="colegio">
+                    <label for="github">Github</label>
+                    <input class="type-1" type="radio" name="select" id="github" value="github">
                 </fieldset>
                 <div class="form-element" >
-                    <label for="remember">User bio</label>
-                    <textarea placeholder="max 10" maxlength="10" name="bio" id="bio" rows="6"></textarea>
-                </div>
-                <!-- <div>
-                    <button type="button">click</button>      
-                </div> -->
-                <div class="form-element">
-                    <label for="country">Country</label>
-                    <select required name="country" id="country">
-                        <option value="es">España</option>
-                        <option value="co">Colombia</option>
-                        <option value="usa">Usa</option>
-                    </select>
+                    <label for="info">Más información</label>
+                    <textarea placeholder="Que más quieres saber" maxlength="500" name="info" id="info" rows="6"></textarea>
                 </div>
                 <div class="form-element row">
-                    <label for="remember">Remember me</label>
-                    <input type="checkbox" name="remember" id="remember">
+                    <label for="newsletter">Acceso a Newsletter</label>
+                    <input type="checkbox" name="checkbox" id="checkbox">
                 </div>
                 <div>
                     <input class="btn secondary" type="reset" value="Reset">
@@ -118,7 +124,7 @@
         </div>
     </section>
     <footer class="footer">
-        <p class="footer-text">Hecho con Amor por<strong> Juan David Ruiz</strong></p>
+        <p class="footer-text">Hecho con <i class="fa-regular fa-heart"></i> por<strong> Juan David Ruiz</strong></p>
         <div class="links">
             <ul class="logo-links">
                <li>

@@ -7,11 +7,23 @@
     border-radius: 4px;
 }
 
+
+
+.fieldset{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    min-width: auto;
+}
+
+
+
 @media screen and (width > 420px ) {
     .card{
         margin-left: auto;
         margin-right: auto;
         margin-top: 0;
         margin-bottom: 3rem;
+        max-width: 468px;
     }
 }

@@ -16,7 +16,6 @@
 
 .main-bg {
     background-color: var(--main-background-color) ;
-    color: var();
 }
 * {
     box-sizing: border-box;

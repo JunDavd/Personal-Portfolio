@@ -42,18 +42,3 @@
         }
     }
 }
-
-
-.file-element{
-    margin-bottom: 1rem;
-    label {
-        display: block;
-        background-color: var(--input-bg-color);
-        color: var(--main-text-color);
-        padding: 1rem;
-        border-radius: 5px;
-    }
-    input[type="file"] {
-        display: none;
-    }
-}
