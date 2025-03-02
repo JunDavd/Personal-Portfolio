@@ -2,11 +2,108 @@
 .main.banner {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
+    height: 100vh;
+    margin-bottom: 1.5rem;
     .about{
         height: 50vh;
+        text-align: start;
     }
     .skills{
+        box-sizing: border-box;
         height: 50vh;
+        width: 100%;
+        max-width: 100vw;
+        .skills-card{
+            display: flex;
+            flex-direction: column;
+            .bar-label{
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 20px;
+                height: 22px;
+                width: 100%;
+                border: 1px solid black;
+                border-radius: 15px;
+                .bar-skill{
+                    &.a{
+                        height: 15px;
+                        width: 0;
+                        border-radius: 18px;
+                        background-color: aquamarine;
+                        animation: bar-skill-a 4s ease-in;
+                        animation-fill-mode: forwards;
+                    }
+                    &.b{
+                        height: 15px;
+                        width: 0;
+                        border-radius: 18px;
+                        background-color: aquamarine;
+                        animation: bar-skill-b 4s ease-in;
+                        animation-fill-mode: forwards;
+                    }
+                    &.c{
+                        height: 15px;
+                        width: 0;
+                        border-radius: 18px;
+                        background-color: aquamarine;
+                        animation: bar-skill-c 4s ease-in;
+                        animation-fill-mode: forwards;
+                    }
+                    &.d{
+                        height: 15px;
+                        width: 0;
+                        border-radius: 18px;
+                        background-color: aquamarine;
+                        animation: bar-skill-d 4s ease-in;
+                        animation-fill-mode: forwards;
+                    }
+
+                }
+            }
+        }
     }
+    p.text-aboutme{
+        font-size: x-small;
+        font-weight: 400;
+        text-align: justify;
+        word-spacing: 3px;
+    }
+}
+
+@keyframes bar-skill-a {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 25%;
+    }
+    
+}
+@keyframes bar-skill-b {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 60%;
+    }
+    
+}
+@keyframes bar-skill-c {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 40%;
+    }
+    
+}
+@keyframes bar-skill-d {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 70%;
+    }
+    
 }
