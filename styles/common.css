@@ -1,0 +1,37 @@
+
+:root {
+    --main-background-color: #f5f5f7;
+    --secondary-background-color: #f6f7f9;
+    --terciary-background-color:#cdfe7d;
+    --border-size: 16px;
+    --main-title-font-weigth: 700px;
+    --main-text-color: #141414;
+    font-size: 16px;
+    font-family: "Spline-Sans","Roboto",Helvetica, sans-serif;
+    
+}
+
+.main-bg {
+    background-color: var(--main-background-color) ;
+    color: var();
+}
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 1rem;  /* esto deja los margenes hacia abajo*/
+}
+
+h1, h2, h3, h4, p {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.hide {
+    display: none;
+}
