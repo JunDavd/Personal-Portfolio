@@ -6,6 +6,9 @@
     font-weight: 200;
     padding: 2em 0;
     background: linear-gradient(254.54deg, #f0ff6c 0.03%, rgb(107, 253, 217) 100%);
+   .icon-size{
+        font-size: 19px;
+    }
 }
 
 .logo-links{
@@ -22,7 +25,7 @@
     .logo-links{
         gap: 25px;
     }
-    p{
+    .footer-text {
         margin-bottom: 0;
     }
 }

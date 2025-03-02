@@ -1,21 +1,92 @@
 .banner{
+    width: 90%;
+    margin: 0 auto;
+    max-width:  1080px;
     text-align: center;
-    height: 100vh;
+    height: 60vh;
     background-color: var(--main-background-color);
-    position: relative; 
-    /* /* display: flex;
-    align-items: center;
-    justify-content: center; 
-    /* margin-bottom: 2rem; */
-    /* .bg-img-banner{
-        background-color: aqua;
-        background-image: url("/assets/bg-image-9.jpg");
+    position: relative;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    margin-bottom: 1.5rem;
+    .img-container{
+        background-image: url('./../assets/heroMobile.png');
         background-repeat: no-repeat;
+        background-position: right;
         background-size: contain;
         position: absolute;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
-    } */
+    }
+    
+}
+.presentation{
+    position: absolute;
+    z-index: 1;
+    text-align: start;
+    .p-1,.p-2,.p-3,.p-4{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .p-4 {
+        background-color: var(--btn-main-color);
+    }
+}
+
+@media screen and (width > 468px) {
+    .presentation .p-1{
+        font-size: 30px;
+    }
+    .presentation .p-2{
+        font-size: 30px;
+    }
+    .presentation .p-3{
+        font-size: 30px;
+    }
+    .presentation .p-4{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (width > 768px) {
+    .presentation .p-1{
+        font-size: 40px;
+    }
+    .presentation .p-2{
+        font-size: 40px;
+    }
+    .presentation .p-3{
+        font-size: 40px;
+    }
+    .presentation .p-4{
+        font-size: 40px;
+    }
+    
+}
+
+/* .presentation{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:start; */
+
+@media screen and (min-width: 468px){
+    .banner {
+        height: 85vh;
+    }
+}
+@media screen and (min-width: 468px) {
+    .banner .img-container {
+        background-image: url('./../assets/heroMedium.png');
+    }
+}
+@media screen and (min-width: 1080px) {
+    .banner .img-container {
+        background-image: url('./../assets/heroBig.png');
+    }
 }
