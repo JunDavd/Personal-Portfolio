@@ -1,0 +1,17 @@
+
+.card{
+    max-width: 420px;
+    margin: 0 auto;
+    background-color: var(--secondary-background-color);
+    padding: 3rem 2rem;
+    border-radius: 4px;
+}
+
+@media screen and (width > 420px ) {
+    .card{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+}

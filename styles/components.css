@@ -27,10 +27,11 @@
         margin-bottom: 0.5rem;
     }
     input, textarea, select {
-        border: none;
+        border-top: 3px;
+        border-color:var(--terciary-background-color);
         padding: 1rem;
         border-radius: 5px;
-        background-color: var(--input-bg-color);
+        background-color: var(--main-background-color);
         color: var(--main-text-color);
     }
     &.row {
